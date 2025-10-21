@@ -1,6 +1,12 @@
 # Finance Data Agent (VER 0.1)
 ## 🚧 Project Status: Under Development 🚧  
-
+TODO:把 qlib_integration.py 的 placeholder 替换为真实 Qlib 流水线
+qlib.init(...)、构造 Dataset (Alpha158 + 新因子)、训练（LGB 或 GeneralPTNN）、回测（TopkDropoutStrategy），输出 IC/ICIR/年化等指标
+将 FactorRunner 中的 LLM prompt/解析做更健壮的处理（异常、安全沙箱、执行超时）
+实现因子执行的沙箱与超时限制（避免 LLM 生成不安全/无限循环代码）
+批量因子生成与筛选（select_method：random/topk by IC）
+CI（单元测试、黑盒回路测试）与打包/发布（GitHub Actions）
+可选：把 demo 页面或日志 UI（rdagent 的那部分）对接到独立仓库或简单的 Streamlit 页面
 
 A lightweight, standalone version of the "Finance Data Agent" from RD-Agent.
 It proposes factor hypotheses, implements factor code via LLM, and backtests via Qlib(UNDER REVIEW) in an iterative loop.
