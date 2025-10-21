@@ -3,7 +3,7 @@
 
 
 A lightweight, standalone version of the "Finance Data Agent" from RD-Agent.
-It proposes factor hypotheses, implements factor code via LLM, and backtests via Qlib(UNDER DISCUSSION) in an iterative loop.
+It proposes factor hypotheses, implements factor code via LLM, and backtests via Qlib(UNDER REVIEW) in an iterative loop.
 
 ## **Research Acknowledgments**
 We are grateful for the foundational research papers that inspired and guided this project:
