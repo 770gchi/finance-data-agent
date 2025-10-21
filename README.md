@@ -1,7 +1,14 @@
-# Finance Data Agent (Standalone)
+# Finance Data Agent (VER 0.1)
+## 🚧 Project Status: Under Development 🚧  
+
 
 A lightweight, standalone version of the "Finance Data Agent" from RD-Agent.
-It proposes factor hypotheses, implements factor code via LLM, and backtests via Qlib in an iterative loop.
+It proposes factor hypotheses, implements factor code via LLM, and backtests via Qlib(UNDER DISCUSSION) in an iterative loop.
+
+## **Research Acknowledgments**
+We are grateful for the foundational research papers that inspired and guided this project:
+- [Alpha-GPT: Human-AI Interactive Alpha Mining for Quantitative Investment](https://arxiv.org/pdf/2308.00016)
+- [https://arxiv.org/abs/2505.15155]
 
 ## Install
 
