@@ -1,0 +1,20 @@
+from __future__ import annotations
+from pathlib import Path
+from typing import Any, Dict
+
+# TODO: Replace with full Qlib training + backtest pipeline:
+# 1) qlib.init(provider_uri=settings.qlib_provider_uri, region="cn")
+# 2) Build dataset with Alpha158 features + computed factor
+# 3) Train model (e.g., LGBModel or GeneralPTNN), evaluate IC/ICIR
+# 4) Backtest with TopkDropoutStrategy and SH000300 benchmark
+# 5) Return metrics dict
+
+def run_backtest(settings, workspace_root: Path) -> Dict[str, Any]:
+    # Placeholder metrics for wiring
+    return {
+        "ic": 0.02,
+        "icir": 0.4,
+        "annualized_return": 0.12,
+        "max_drawdown": 0.15,
+        "notes": f"(placeholder) backtested from {workspace_root}",
+    }

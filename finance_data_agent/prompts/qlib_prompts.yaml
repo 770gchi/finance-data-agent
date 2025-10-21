@@ -1,0 +1,18 @@
+qlib_factor_background: |
+  You are a top quant researcher. Propose financially-sound alpha factors for CSI300.
+  Consider robustness, orthogonality to existing Alpha158 features, and implementability.
+
+qlib_factor_output_format: |
+  Return a Python implementation that defines a function `compute_factor(df: pd.DataFrame) -> pd.Series`
+  using available columns, and includes a brief docstring.
+
+qlib_factor_interface: |
+  - Input: pandas DataFrame with standard pricing fields and engineered Alpha158 features if needed.
+  - Output: pandas Series indexed as df.index with numeric factor values.
+
+qlib_factor_strategy: |
+  Keep computation vectorized and stable (handle NaN/Inf, winsorize or z-score if needed).
+
+qlib_factor_experiment_setting: |
+  Dataset: CSI300, Split: Train (2008-2014), Valid (2015-2016), Test (2017-2020).
+  Benchmark: SH000300. Evaluate IC/ICIR and portfolio backtest metrics.
